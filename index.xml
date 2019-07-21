@@ -1,0 +1,12 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+	<channel>
+		<title>Ross Larson </title>
+		<link>https://ross-larson-blog.github.io/</link>
+		<generator>Hugo -- gohugo.io</generator>
+		<language>en-us</language>
+		<author>Ross Larson</author>
+		<rights>Copyright (c) 2019</rights>
+		<updated>2019-07-20 18:35:01 -0500 CDT</updated>
+		
+	</channel>
+</rss>
