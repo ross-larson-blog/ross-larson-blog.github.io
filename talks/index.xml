@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Talks on Ross Larson</title>
+    <link>https://ross-larson-blog.github.io/talks/</link>
+    <description>Recent content in Talks on Ross Larson</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 07 Aug 2019 10:30:36 -0500</lastBuildDate>
+    
+	<atom:link href="https://ross-larson-blog.github.io/talks/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Stress at Work: Changing the Narrative with Cognitive Therapy</title>
+      <link>https://ross-larson-blog.github.io/talks/stress-at-work-cbt/</link>
+      <pubDate>Wed, 07 Aug 2019 10:30:36 -0500</pubDate>
+      
+      <guid>https://ross-larson-blog.github.io/talks/stress-at-work-cbt/</guid>
+      <description>THAT Conference 2019 Day: Wed, Aug 7 Time: 10:30 AM
+Everyone has stress at work. We can&amp;rsquo;t make the stressful events go away, but we may be able to change how we think about them, and how we react to them. In this session, you will learn about what Cognitive Behavioral Therapy is, and what it can do for you. We will go over tips and tricks to deal with workplace stressors, big and small.</description>
+    </item>
+    
+    <item>
+      <title>Impostor Syndrome</title>
+      <link>https://ross-larson-blog.github.io/talks/impostor-syndrome/</link>
+      <pubDate>Tue, 08 Aug 2017 13:00:00 -0500</pubDate>
+      
+      <guid>https://ross-larson-blog.github.io/talks/impostor-syndrome/</guid>
+      <description>Hear about Impostor Syndrome from a software developer with a Psychology degree.
+In this talk, you will learn what Impostor Syndrome is, why it matters in today&amp;rsquo;s workplace, and strategies for conquering it. You will learn ways to be an advocate for others in tech, from people who are just considering a career to long-time industry veterans.
+After listening to this talk, you will gain insights about yourself and your co-workers, and you will learn how to be a better person, employee, and advocate for others.</description>
+    </item>
+    
+  </channel>
+</rss>
