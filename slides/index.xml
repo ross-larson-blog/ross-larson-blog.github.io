@@ -25,7 +25,7 @@ Testing THAT slide 2.
 background-image: url(That-Conference-2020.png) background-size: cover
 ???
 Testing THAT slide 3.
-class: title background-image: url(cover.jpg)
+class: title, smokescreen, shelf, no-footer background-image: url(cover.jpg)
 Stress at Work Changing the Narrative with Cognitive Therapy About Me  Slides are at https://ross-larson-blog.github.io/slides/ Ask questions anytime  Slides and Contact Information .</description>
     </item>
     
