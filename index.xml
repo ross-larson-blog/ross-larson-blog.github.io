@@ -33,7 +33,7 @@
 
 &lt;p&gt;In case you&amp;rsquo;re not in the mood to do that, the raw markdown for the presentation is below:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;
 # http://godoc.org/golang.org/x/tools/present
 # Present files have the following format. 
 # The first non-blank non-comment line is the title.
