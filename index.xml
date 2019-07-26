@@ -1,7 +1,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 	<channel>
 		<title>Ross Larson </title>
-		<link>https://ross-larson-blog.github.io/</link>
+		<link>https://rosslarson.com/</link>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
 		<author>Ross Larson</author>
@@ -10,11 +10,11 @@
 		
 		<item>
 			<title>How About a Go?</title>
-			<link>https://ross-larson-blog.github.io/talks/how-about-a-go/</link>
+			<link>https://rosslarson.com/talks/how-about-a-go/</link>
 			<pubDate>Mon, 06 Aug 2018 14:30:00 CDT</pubDate>
 			<author>Ross Larson</author>
-			<guid>https://ross-larson-blog.github.io/talks/how-about-a-go/</guid>
-			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ross-larson-blog.github.io/talks/that18.png" medium="image" type="image/jpg" width="100" height="100" />
+			<guid>https://rosslarson.com/talks/how-about-a-go/</guid>
+			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://rosslarson.com/talks/that18.png" medium="image" type="image/jpg" width="100" height="100" />
 			<description>&lt;p&gt;Go: A beginner’s perspective. What&amp;rsquo;s the Google Go language (Golang) really good for? Is it “worth a go”? Ease of deployment, simple syntax, and native concurrency make for strong arguments! You will hear about Go from a beginner&amp;rsquo;s point of view.&lt;/p&gt;
 
 &lt;p&gt;No Go experience is necessary.&lt;/p&gt;
@@ -23,7 +23,7 @@
 
 &lt;p&gt;Although the talk itself was not recorded, I did do an interview with Clark Sell about Golang at That Conference, and the video of that conversation is linked to the talk here.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&#34;https://golang.org/&#34;&gt;&lt;img src=&#34;https://ross-larson-blog.github.io/talks/go-gopher.gif&#34; alt=&#34;The Go gopher&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://golang.org/&#34;&gt;&lt;img src=&#34;https://rosslarson.com/talks/go-gopher.gif&#34; alt=&#34;The Go gopher&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;&lt;em&gt;One issue with providing this presentation after the fact is that it was written in golang, using the &lt;a href=&#34;https://halyph.com/blog/2015/05/18/golang-presentation-tool.html&#34;&gt;go present tool&lt;/a&gt;, which allowed me to run code snippets live during the presentation. However, the attempts that I&amp;rsquo;ve made to export it to a more portable format like PDF have all failed.&lt;/em&gt;&lt;/p&gt;
 
@@ -319,11 +319,11 @@ http://about.me/rosslarson
 		
 		<item>
 			<title>Impostor Syndrome- I Have No Idea What I&#39;m Doing</title>
-			<link>https://ross-larson-blog.github.io/talks/impostor-syndrome/</link>
+			<link>https://rosslarson.com/talks/impostor-syndrome/</link>
 			<pubDate>Tue, 08 Aug 2017 13:00:00 CDT</pubDate>
 			<author>Ross Larson</author>
-			<guid>https://ross-larson-blog.github.io/talks/impostor-syndrome/</guid>
-			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://ross-larson-blog.github.io/talks/thatconf2017.jpg" medium="image" type="image/jpg" width="100" height="100" />
+			<guid>https://rosslarson.com/talks/impostor-syndrome/</guid>
+			<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://rosslarson.com/talks/thatconf2017.jpg" medium="image" type="image/jpg" width="100" height="100" />
 			<description>&lt;p&gt;Hear about Impostor Syndrome from a software developer with a Psychology degree.&lt;/p&gt;
 
 &lt;p&gt;In this talk, you will learn what Impostor Syndrome is, why it matters in today&amp;rsquo;s workplace, and strategies for conquering it. You will learn ways to be an advocate for others in tech, from people who are just considering a career to long-time industry veterans.&lt;/p&gt;
