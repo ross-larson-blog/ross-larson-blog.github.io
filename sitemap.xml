@@ -4,13 +4,27 @@
   
   <url>
     <loc>https://rosslarson.com/</loc>
-    <lastmod>2019-08-01T10:44:25-05:00</lastmod>
+    <lastmod>2019-10-07T20:30:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosslarson.com/talks/stress-at-work-cbt-cwitc/</loc>
+    <lastmod>2019-10-07T20:30:12-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://rosslarson.com/talks/</loc>
+    <lastmod>2019-10-07T20:30:12-05:00</lastmod>
   </url>
   
   <url>
     <loc>https://rosslarson.com/slides/</loc>
     <lastmod>2019-08-01T10:44:25-05:00</lastmod>
-    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://rosslarson.com/slides/stress-at-work-cbt/</loc>
+    <lastmod>2019-08-01T10:44:25-05:00</lastmod>
   </url>
   
   <url>
@@ -21,12 +35,6 @@
   <url>
     <loc>https://rosslarson.com/talks/stress-at-work-cbt/</loc>
     <lastmod>2019-08-01T10:30:36-05:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://rosslarson.com/talks/</loc>
-    <lastmod>2019-08-01T10:30:36-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -45,7 +53,6 @@
   
   <url>
     <loc>https://rosslarson.com/categories/</loc>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -54,7 +61,6 @@
   
   <url>
     <loc>https://rosslarson.com/tags/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
