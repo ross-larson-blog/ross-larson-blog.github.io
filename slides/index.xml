@@ -19,12 +19,12 @@
       <description>class: title, smokescreen, shelf, no-footer background-image: url(leo-serrat-533922-unsplash.jpg)
 Stress at Work Changing the Narrative with Cognitive Therapy ???
 Make sure you&amp;rsquo;re in the right room!
-class: img-left
-About Me  Software Developer at Paradigm Luther College Alumnus - Psychology / French majors TEALS volunteer Admin, Madison, WI Slack Human being Survivor  @rosslarsonWI
-hello@rosslarson.com
+background-image: url(Slide1.png) background-size: cover
 ???
-Hi. I&amp;rsquo;m Ross. Slides .qrcode.db.fr.w-40pct.ml-4[]
-Slides are at https://rosslarson.com/slides/ or you can scan the QR code.</description>
+Welcome to the Central Wisconsin IT Conference
+ Background images don&amp;rsquo;t appear to scale correctly unless I also apply &amp;ldquo;background-size: cover&amp;rdquo; to the slide.-  background-image: url(Slide2.png) background-size: cover
+???
+Sponsors are great. Without them, CWITC would not be possible. I&amp;rsquo;m thankful for them.</description>
     </item>
     
     <item>
