@@ -1,0 +1,343 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Getting (.NET) Interactive! Slides for THAT Conference 2022 session about .NET Interactive.</title><link rel=alternate type=application/rss+xml title=RSS href=https://rosslarson.com/index.xml><link rel=canonical href=https://rosslarson.com/slides/getting-net-interactive/><link rel="shortcut icon" type=image/png href=https://rosslarson.com/apple-touch-icon-precomposed.png><meta name=description content="Slides for THAT Conference 2022 session about .NET Interactive."><meta name=generator content="Hugo 0.85.0"><meta property="og:title" content="Getting (.NET) Interactive! Slides for THAT Conference 2022 session about .NET Interactive."><meta property="og:type" content="article"><meta property="og:image" content="https://rosslarson.com/talks/images/that-logo-states-wi.svg"><meta property="og:description" content="Slides for THAT Conference 2022 session about .NET Interactive."><meta property="og:url" content="https://rosslarson.com/slides/getting-net-interactive/"><meta property="og:site_name" content="Getting (.NET) Interactive! Slides for THAT Conference 2022 session about .NET Interactive."><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content="@rosslarsonWI"><link rel=stylesheet type=text/css href=https://rosslarson.com/css/apron.css></style><link rel=stylesheet type=text/css href=https://rosslarson.com/css/adirondack.css></style><link rel=stylesheet type=text/css href=https://rosslarson.com/css/descartes.css></style><style type=text/css>@page{size:1216px 684px;margin:0}</style><link rel=stylesheet href=https://use.fontawesome.com/releases/v5.3.1/css/all.css integrity=sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU crossorigin=anonymous><link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans:400,400i,700,700i|Quattrocento:400,700|Spectral:400,400i,700,700i&subset=latin-ext" rel=stylesheet><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js></script><script src=https://rosslarson.com/js/story.js></script></head><body class="ma0 bg-white section-slides page-kind-page is-page-true feature-qrcode"><main role=main><textarea id=source>class: title, smokescreen, shelf, no-footer
+background-image: url(images/dotnet-interactive.png)
+
+# Getting (.NET) Interactive!
+## An introduction to .NET Interactive Notebooks
+
+???
+
+Make sure you&#39;re in the right room!
+---
+background-image: url(that/That-Conference-Branding-Slide.png)
+background-size: cover
+
+???
+
+# Welcome to THAT Conference 2022!
+
+- Background images don&#39;t appear to scale correctly unless I also apply &#34;background-size: cover&#34; to the slide.-
+
+---
+background-image: url(that/That-Conference-Partners-Slide.png)
+background-size: cover
+
+???
+# Sponsors 
+
+Sponsors are great.  Without them, That Conference would not be possible.  I&#39;m thankful for them.
+
+---
+background-image: url(that/THAT.us.png)
+background-size: cover
+
+???
+
+That.us is pretty great.  Come and join the conversation, all year long!
+
+---
+background-image: url(that/THAT-Dates.png)
+background-size: cover
+
+???
+
+Also.... It&#39;s never to early to start thinking about next year!
+
+---
+class: img-left
+# About Me
+
+![Selfie](ross1.jpg)
+
+- Software Developer at Paradigm
+- Luther College Alumnus
+- Admin, [Madison, WI Slack](http://madisoncommunity.org/)
+- Father
+- Gamer
+- Sports fan
+- Survivor
+
+@rosslarsonWI
+
+hello@rosslarson.com
+
+THAT Slack : rosslarson
+
+???
+
+Hi. I&#39;m Ross.
+
+I&#39;m a father, a gamer, a sports fan, a geek, and other stuff.
+
+Important to note here: 
+The coding usually I do in my free time is:
+-  Hugo Static sites and 
+- .NET Core apps, often webscrapers.
+---
+# Slides and Session Information
+
+.qrcode.db.fr.w-40pct.ml-4[]
+
+- General session info available at https://rosslarson.com/talks/
+- Slides are at https://rosslarson.com/slides/ or just use the QR code
+- Ask questions anytime
+
+???
+
+Here&#39;s a QR Code if you want to follow along on your laptop or phone.
+Ask questions anytime.
+---
+class: top
+# A history of working with .NET interactively.
+![helloWorld](images/helloWorldTutorial.png)
+
+???
+
+Dotnet has been around for a while, but trying it out used to involve quite a few steps, such as:
+- Downloading and installing Visual Studio
+- Installing a dotnet SDK
+- Creating a project or app
+- Running or debugging the program to see output.
+
+It was the way things were always done, but there was certainly room for improvement.
+---
+class: col-2
+
+# Drawbacks to Traditional .NET in Visual Studio
+
+- Big initial download and setup
+- Initial output is mostly limited to debugging and print statements
+- Hard to share results of analysis steps
+
+![sad-dog](images/sadDog.png)
+
+???
+
+- The initial setup of Visual Studio can be daunting.  The install size for Visual Studio Community including suggested SDKs and tools is about 30-50 GBs nowadays.
+- Getting past the initial &#34;Hello World&#34; phase can take some time, and your early output is going to probably be print statements and looking at variables in immediate window while debugging.
+- Visual Studio isn&#39;t really built to store the output of the code you write, as it was written with development of the application in mind, not necessarily the output.
+
+---
+class: img-caption
+![trydotnet](images/trydotnet-that.png)
+
+## The first big step - Try.NET in the browser
+
+???
+
+- In 2019, .NET started to move foward to the web in a new way.
+- A REPL (Read-Eval-Print Loop) isn&#39;t a new concept, but because C# did not start as a web language, it wasn&#39;t close to the first language
+- Try dot net in the browser was a pretty big step for the .NET stack.
+- Apparently, at the start, Microsoft was footing the bill for azure virtual machines that were connecting with every site visitor that wanted to try dotnet in the browser.
+- Eventually, Blazor allowed them to save on some server costs.
+---
+class: img-caption
+![try-dotnet-example](images/dotnet-try2.gif)
+
+# `dotnet try` - Creating your own interactive documentation
+
+???
+
+- The website was cool, and it allowed for experimentation, but what about if you wanted to make something interactive for yourself, or someone else?
+- The dotnet try tool allows you to match markdown and editable, executable code to be created and served up for yourself or someone else.
+- A good example of this is the [hello world](https://docs.microsoft.com/en-us/dotnet/csharp/tour-of-csharp/tutorials/hello-world) tutorial on the Micosoft docs site.
+
+---
+class: col-2
+# Running `dotnet try` locally
+
+![Dotnet-try-browser](images/dotnet-try.gif)
+- Run `dotnet try` from the console 
+- (or server)
+
+![Dotnet-try-browser](images/try-markdown.png)
+- Markdown mixed with code
+- Friendly presentation
+- Code is editable by end-user
+
+???
+
+- If you run `dotnet try` locally, it will start a webserver and serve the content into a browser, where you can interact with code blocks and see their results.
+- `dotnet try` is pretty cool, but it still requires the user to run the program themselves.
+- Also, you run the risk of things running differently on their computer if different packages or versions of things are installed.
+
+
+---
+class: img-caption
+![Jupyter](images/jupyter.svg)
+# Meanwhile, an (old?) new tool appears from a different land....
+
+???
+
+# Jupyter - a different tool for a different purpose
+
+Jupyter Notebook (formerly IPython Notebooks) is a web-friendly interactive computational environment for creating notebook documents.
+
+---
+class: img-caption
+![Jupyter-Dashboard](images/jupyter-dashboard2.png)
+# A document-based development model
+
+???
+
+# Jupyter - Document-based development for sharing
+
+A Jupyter Notebook document is a REPL containing an ordered list of input/output cells which can contain code, text (using Markdown), mathematics, plots and rich media. Underneath the interface, a notebook is a JSON document, following a versioned schema, usually ending with the &#34;.ipynb&#34; extension. 
+
+The project was original brought together to support Julia, Python, and R and help those languages create easily consumable and reproducable content.
+
+You may see some similarities between this and `dotnet-try`.
+
+---
+class: img-caption
+![VS-Code-Insiders](images/VS-Code-Insiders.png)
+
+# Also Emerging: Visual Studio Code
+???
+# Visual Studio Code
+- Visual Studio Code came out in 2015, [and has been evolving rapidly, as well](https://en.wikipedia.org/wiki/Visual_Studio_Code).
+- Their extensions marketplace has allowed for rapid evolution of the editor, and new functionality has been quickly appearing.
+
+---
+class: col-2
+# Now........ Let our powers combine!
+
+- ![vs-code](images/vscode.svg# maxw-2) Visual Studio Code
+- ![jupyter](images/jupyter.svg# maxw-2) Jupyter Notebooks
+- ![dotnet-interactive](images/dotnet-interactive.png# maxw-2) .NET Interactive
+- ![OpenSource](images/GitHub-Mark-64px.png# maxw-2) Open Source
+- ![heart](images/8bitheart.jpg# maxw-2) Heart
+
+![CaptainPlanet](images/LetOurPowersCombine.gif)
+
+???
+# Notebooks are a combination of several powers
+
+- VS Code
+- Jupyter
+- DotNet Interactive Kernel
+- Open Source
+- Heart
+
+- Because of the beauty of open source, a rising tide lifts all boats.....
+- Microsoft was able to add a .NET Interactive Kernel into Jupyter Notebooks.
+- Microsoft then added .NET Notebooks support to VS code via VS Code Extensions
+    - First to VS Code (and [nteract](https://nteract.io/), and Azure Data Studio)
+    - Then to Visual Studio (as of this month)
+- Add some heart, and you have .NET Interactive notebooks! 
+---
+class: img-caption
+![thinking](images/thinking.gif)
+# So, How am I supposed to use .NET Interactive?
+
+???
+
+This seems interesting, but how am I supposed to use a tool like .NET Interactive?
+
+Good question!
+---
+class: img-right
+# You can choose your own adventure!
+![ChooseYourOwnAdventure](images/cyoa-supercomputer.png# maxh-6)
+
+- Learning Experiences
+- Data Prep
+- Data Exploration
+- Troubleshooting
+- Documentation / Onboarding
+- Visualization
+- Prototyping
+
+???
+# The power is yours!
+
+What you can do with a .NET Interactive Notebook is going to be defined by your expertise and interest.
+
+Some possible ideas:
+
+- Learning Experiences
+- Data Prep
+- Data Exploration
+- Troubleshooting
+- Documentation / Onboarding
+- Visualization
+- Prototyping
+
+---
+class: col-2
+# .NET Interactive Notebooks - Pros and Cons
+
+## Pros
+- Integrations for:
+    - VS Code, 
+    - Visual Studio, 
+    - Azure Data Studio
+    - and more!
+- Broad .NET support &#43; SQL/KML
+- Polyglot language support
+- SandDance makes cool visuals
+- Support from multi-billion dollar company
+
+## Cons
+- Still in development - rough edges
+- Embedding and sharing interactivity requires a few confusing steps
+- Troubleshooting issues can be a pain
+- Understanding differences from Jupyter can be be tough
+- Codespaces support is buggy sometimes
+
+???
+# Pros and Cons
+---
+class: img-caption
+![demo](images/bd-demo.gif)
+
+# Demo Time!
+
+???
+
+# Demos
+
+- Programming model (from Interactive - show batteries included)
+- Displaying output (show variable and display commands)
+- Formatting output (show messy data display get clean)
+- Importing packages (create and import somthing.csx)
+- Variable Sharing (sharing across languages)
+- Show AIS ships (polyglot, load from file, use all of Norway)
+    &#43; AIS: Automatic Identification System
+- NFL Draft Notebook (DataFrames and SandDance)
+- Mermaid (Show off cool flow charts)
+- American Soccer Analysis (If extra time available)
+
+I made my own repo on [GitHub](https://github.com/zo0o0ot/THAT-dotnet-interactive) so that going over these notebooks is less complicated.
+You can [open it in Binder](https://mybinder.org/v2/gh/zo0o0ot/THAT-dotnet-interactive/main?urlpath=lab) and most examples work.
+
+---
+
+class: img-caption
+![confused-pugs](images/pug-questions.webp)
+
+# Questions? Thoughts?
+
+???
+
+# Any Questions?
+
+---
+background-image: url(images/bow-thank-you.webp)
+background-size: stretch
+
+# Thanks!
+
+???
+
+# Thanks!
+---
+ ### Credits
+- THAT Conference Cartoons courtesy of THAT Conference, © 2021 THAT® All rights reserved.
+- Picture of a sad dog courtesy of user pinoyed on [flickr](https://www.flickr.com/photos/pinoyed/5009440499/in/photostream/). Image description: Murray&#39;s sad face. - Creative Commons Attribution 2.0 Generic (CC BY 2.0)
+- &#34;Captain Planet Combine&#34; gif courtesy of Damien G via [giphy](https://giphy.com/gifs/captain-planet-planeteers-letourpowerscombine-kQYNaEa35hQ6pCYywH) - Captain planet courtesy of the 1990&#39;s, Ted Turner, and TBS.
+- &#34;Looking let me think&#34; gif courtesy of TipsyElves.com via [giphy](https://giphy.com/gifs/tipsyelves-math-26gR0YFZxWbnUPtMA)
+- &#34;Drunk Boston Dynamics&#34; gif courtesy of Lion Beach via [giphy](https://giphy.com/gifs/lionbeach-boston-dynamics-fPI2ymej8ZEBI332VN). The people at [Boston Dynamics](https://www.bostondynamics.com/) also deserve credit, and I sincerely hope that evil robots do not rise up and take over the world.
+- &#34;Feelings Thoughts&#34; gif courtesy of Chuber Channel via [giphy](https://giphy.com/gifs/chuber-feelings-thoughts-questions-XHVmD4RyXgSjd8aUMb)
+- &#34;Bow Thank You&#34; gif courtesy of Out of Office via [giphy](https://giphy.com/gifs/3ZZD9fwwaI8u7hQe1P)
+</textarea>
+<script type=text/javascript src=https://rosslarson.com/js/qrcode.js></script><script src=https://rosslarson.com/js/remark.js></script><script>var slideshow=remark.create({ratio:"16:9",navigation:{scroll:!1},countIncrementalSlides:!1,slideNumberFormat:'%current%',highlightLanguage:"xaprb",placeholder:"dummy value to end the list without a comma"});$(".remark-slide-content.fit-h1 h1").each(function(e,b){var a=$(b),c=a.closest('div.remark-slide-container'),d=!c.hasClass('remark-visible');for(d&&c.toggleClass('remark-visible');b.scrollHeight>b.clientHeight+1&&a.css('font-size')!='1px';)a.css('font-size',parseInt(a.css('font-size'))-1+"px");d&&c.toggleClass('remark-visible')}),$(function(){$("body.feature-qrcode:not(.feature-noqrcode)").length&&$(".qrcode").length&&new QRCode($(".qrcode")[0],{useSVG:!0,text:window.location.href.replace(/#\d*$/,"")})})</script></main></body></html>
